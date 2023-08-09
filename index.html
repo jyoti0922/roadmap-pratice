@@ -8,11 +8,13 @@
     <!-- css file links -->
     <link rel="stylesheet" href="./assets/css/roadmap.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+
 </head>
 
 <body>
-    <!-- roadmap start here -->
+    <!-- roadmap-secton-start-here -->
     <div class="timeline">
+        <div class="centerline"></div>
         <div class="container left-container">
             <img src="./assets/images/png/alpha-logo.png" alt="alpha-logo-img" />
             <div class="text-box">
@@ -80,17 +82,19 @@
             </div>
         </div>
     </div>
-    <!-- animated section here -->
+    <!-- Animated-section-start-here -->
     <div class="animated_border">
         <h2 style="color:white;">01</h2>
     </div>
-    <div class="transparent_box">
-        <img style="width:100%;" src="./assets/images/webp/hero-sectionImg.webp" alt="animated-image" />
-        <div class="rotated_box"></div>
+    <div class="hero_wave">
+        <div class="hero_wave_height">
+            <div class="grad_bg"></div>
+        </div>
     </div>
-
-
-    <script src="./assets/js/roadmap.js"></script>
+    <!-- gsap animation java script -->
+    <script src="path/to/gsap.min.js"></script>
+    <script src="path/to/ScrollTrigger.min.js"></script>
+    <script src="/assets/js/timeline.js"></script>
 </body>
 
 </html>

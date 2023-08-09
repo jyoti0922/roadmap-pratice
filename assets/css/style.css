@@ -1,47 +1,42 @@
-/* transparent-box-css here */
-.transparent_box {
-  width: 100%;
-  position: relative;
-  margin-top: 200px;
+/* animation image css */
+.hero_wave_height {
+  padding-top: 15.08%;
 }
-.rotated_box {
-  position: absolute;
-  content: "";
-  width: 10%;
-  height: 100%;
-  background-color: #f38cd4;
-  left: 0%;
-  top: 0%;
-  z-index: -1;
-  animation: rotate 4s linear infinite;
+.hero_wave {
+  -webkit-mask-size: 100% 100%;
+  -webkit-mask-clip: border-box;
+  -webkit-mask-image: url("../images/webp/hero-sectionImg.webp");
+  mask-size: 100% 100%;
+  mask-clip: border-box;
+  z-index: 1;
+  max-width: 100%;
+  margin-top: 1.46em;
+  position: relative;
+  left: 0;
   overflow: hidden;
 }
-@keyframes rotate {
-  0% {
-    transform: rotate(90deg);
-    left: 0%;
-    top: 0%;
-  }
-  25% {
-    transform: rotate(90deg);
-    top: 0%;
-  }
-  50% {
-    transform: rotate(180deg);
-    left: 50%;
-    top: 0%;
-  }
-  75% {
-    transform: rotate(270deg);
-  }
+.grad_bg {
+  background-image: conic-gradient(
+    #ff7fd8,
+    #aa2aff 20%,
+    #557cff 50%,
+    #32d7ff 75%,
+    #97fcff 100%
+  );
+  z-index: -1;
+  filter: blur(20px);
+  position: absolute;
+  top: -364%;
+  bottom: -364%;
+  left: -200%;
+  right: -200%;
+  animation: gradient-bg 4s linear infinite;
+}
+@keyframes gradient-bg {
   100% {
-    transform: rotate(360deg);
-    background-color: #25061b;
-    left: 80%;
-    top: 0%;
+    transform: translate3d(0px, 0px, 0px) rotate(360deg);
   }
 }
-
 /* ----------------- use media screen here ------------------- */
 @media screen and (max-width: 479px) {
   .header__logo {
